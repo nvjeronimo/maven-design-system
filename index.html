@@ -2563,9 +2563,9 @@ if (logoEl) {
     const wrap = document.createElement('div');
     wrap.style.cssText = 'display:flex;align-items:center;justify-content:center;padding:24px 32px;border-radius:8px;background:' + bg + ';border:1px solid var(--neutral-200);';
     const img = document.createElement('img');
-    img.src = 'maven-icons/maven-logo.svg';
+    img.src = i === 0 ? 'skillup-logo-dark.svg' : 'skillup-logo-light.svg';
     img.alt = 'SkillUp logo';
-    img.style.cssText = 'height:32px;' + (i === 1 ? 'filter:invert(1);' : '');
+    img.style.cssText = 'height:32px;';
     wrap.appendChild(img);
     logoEl.appendChild(wrap);
   });
